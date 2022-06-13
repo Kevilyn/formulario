@@ -19,9 +19,9 @@ function adicionarCard(dados) {
     const card = document.createElement("div");
     
     card.innerHTML = 
-    `<p> ${conta.Titulo}    </p>
-    <p> ${conta.Email}      </p>
-    <div class="imagem"><img src="${conta.Link}"></img></div>
+    `<h2> ${conta.Titulo}    </h2>
+    <span> ${conta.Email}      </span>
+    <img src="${conta.Link}">
     <p>  ${conta.Descricao}  </p>`
    
     card.setAttribute("class", "card");
