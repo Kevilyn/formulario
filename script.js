@@ -7,8 +7,7 @@ formulario.addEventListener("submit", function (event) {
 
   adicionarCard(dados);
   event.preventDefault();
-  this.reset()
-
+  this.reset();
 });
 
 function adicionarCard(dados) {
@@ -17,18 +16,17 @@ function adicionarCard(dados) {
   contas.innerHTML = "";
   contasCriadas.forEach((conta) => {
     const card = document.createElement("div");
-    
-    card.innerHTML = 
-    `<h2> ${conta.Titulo}    </h2>
-    <span> ${conta.Email}      </span>
+
+    card.innerHTML = `<h2> ${conta.Titulo}    </h2>
+    <p> ${conta.Data}</p>
+    <p> ${conta.Email}</p>
     <img src="${conta.Link}">
-    <p>  ${conta.Descricao}  </p>`
-   
+    <p>  ${conta.Descricao}</p>`;
+
     card.setAttribute("class", "card");
     contas.appendChild(card);
-    
+
     let primeiroPost = contas.firstChild;
-    contas.insertBefore(card, primeiroPost)
+    contas.insertBefore(card, primeiroPost);
   });
 }
-

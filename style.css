@@ -1,25 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: "Kdam Thmor Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
   /* background: #031323; */
   overflow: hidden;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-15deg, #6d18ff, #ff0000, #1c003e);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
 }
 
 /* #icon forms */
-
-.fas {
-  width: 32px;
-}
-
 
 .formulario {
   display: flex;
@@ -27,6 +23,8 @@ body {
   align-items: center;
   min-height: 400px;
   margin: 0 auto;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
 }
 
 @keyframes gradient {
@@ -39,12 +37,11 @@ body {
   100% {
     background-position: 0% 50%;
   }
-
 }
-
 
 .box {
   position: relative;
+  /* display:flex; */
 }
 
 .box .square {
@@ -59,7 +56,8 @@ body {
 }
 
 @keyframes square {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(-20px);
   }
   50% {
@@ -70,15 +68,15 @@ body {
 .box .square:nth-child(1) {
   width: 85px;
   height: 85px;
-  top: -235px;
-  right: -405px;
+  top: -275px;
+  right: -540px;
 }
 
 .box .square:nth-child(2) {
   width: 150px;
   height: 150px;
   top: -120px;
-  left: -125px;
+  left: -105px;
   z-index: 2;
 }
 
@@ -86,8 +84,8 @@ body {
   width: 60px;
   height: 60px;
   bottom: 85px;
-  right: -410px;
-  top: 110px;
+  right: -540px;
+  top: 130px;
   z-index: 2;
 }
 
@@ -95,7 +93,7 @@ body {
   width: 50px;
   height: 50px;
   bottom: 35px;
-  left: -95px;
+  left: -85px;
   top: 170px;
 }
 
@@ -104,21 +102,21 @@ body {
   height: 50px;
   top: -15px;
   left: -25px;
-  top: -230px;
+  top: -280px;
 }
 
 .box .square:nth-child(6) {
   width: 100px;
   height: 100px;
-  top: -100px;
-  right: -520px;
+  top: -90px;
+  right: -620px;
 }
 
 .container {
   position: relative;
-  padding: 50px;
-  width: 260px;
-  min-height: 380px;
+  padding: 100px;
+  width: 300px;
+  min-height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,19 +135,26 @@ body {
   left: 5px;
   border-radius: 5px;
   pointer-events: none;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 2%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.1) 2%
+  );
 }
 
 .form1 {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  font-family: "Montserrat", sans-serif;
 }
 
 .form1 h2 {
   color: #fff;
   letter-spacing: 2px;
   margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 
 .form1 .inputBx {
@@ -174,7 +179,7 @@ body {
 
 .form1 .inputBx .fas {
   position: absolute;
-  top: 13px;
+  top: 10px;
   left: 13px;
 }
 
@@ -194,7 +199,7 @@ body {
 
 .form1 .inputBx input:focus ~ span,
 .form1 .inputBx input:valid ~ span {
-  transform: translateX(-30px) translateY(-30px);
+  transform: translateX(-30px) translateY(-25px);
   font-size: 12px;
   color: #000;
 }
@@ -215,7 +220,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-
 .submit {
   background: #fff;
   color: #111;
@@ -230,16 +234,22 @@ body {
 }
 
 .submit:hover {
-  background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.25));
+  background: linear-gradient(
+    115deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(255, 255, 255, 0.25)
+  );
   color: rgb(0, 0, 0);
   transition: 0.5s;
 }
 
 main {
   width: 100%;
-  margin: 60px 0px;
-  background-color: #23a6d5;
-  padding: 20px;
+  /* margin: 60px 0px; */
+  /* background-color: #23a6d5; */
+  padding: 50px;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container2 {
@@ -250,49 +260,59 @@ main {
   flex-wrap: wrap;
 }
 
-.card{
-  width: 180px;
+.card {
+  width: 150px;
   /* height: 400px; */
-  color: #d6d6d6;
-  border: 1.5px solid #ffffff;
+  color: #333030;
+  border: 1.5px solid #808080;
   border-radius: 15px;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
-  gap: 10px;
-  font-size: 10px;
+  align-items: center;
+  gap: 20px;
+  /* font-size: 10px; */
   margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.card h2 {
+  font-family: "Pacifico", sans-serif;
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 10px;
 }
 
 .card img {
   width: 90%;
+  border: 1px solid #6b6666;
 }
 
-
-footer{
+footer {
   width: 100%;
-  height: 200px; 
+  height: 200px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   padding: 25px 0;
-  
+  font-family: "Montserrat", sans-serif;
 }
 
-.rodape{
+.rodape {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  color: #F0F0F0;
+  color: #f0f0f0;
   gap: 25px;
 }
 
-.dev{
+.dev {
   width: 150px;
   display: flex;
   flex-wrap: wrap;
@@ -302,14 +322,13 @@ footer{
   font-size: 14px;
 }
 
-.dev h4{
+.dev h4 {
   text-align: center;
   width: 120px;
 }
 
-
-.redes{
-  display:flex;
+.redes {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 5px;
@@ -318,16 +337,109 @@ footer{
   height: 100%;
 }
 
-.redes a img{
+.redes a img {
   width: 45px;
 }
 
-.redes a:hover{
+.redes a:hover {
   transform: scale(1.35);
   transition: 0.4s;
 }
 
-@media screen and (min-width:
+/* @media screen and (min-width:
 1024px) {
  #main { min-width: 1000px; }
+} */
+
+@media only screen and (mix-width: 500px) {
+  .formulario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  /* 
+  .nome-cidade{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+
+  .cabecalho-imagem{
+  min-width: 80%;
+  }
+
+  .cabecalho h1{
+  width: 80%;
+  }
+
+  .cabecalho-menu{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+  }
+
+  .cabecalho-menu-item{
+    width: 80%;
+  } */
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .card {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 400;
+    min-width: 260;
+  }
+
+  .form1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .redes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
 }

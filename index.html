@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-  <title>CheckPoint</title>
+  <title>Mural de Fotos</title>
 </head>
 
-<body style="overflow: auto">
+<body style="overflow-y: auto">
 
   <section class="formulario">
 
@@ -31,28 +32,34 @@
             <div class="inputBx">
               <input id="titulo" type="text" name="Titulo" required="required">
               <span>Título</span>
-              <i class="fas fa-circle"><img src="/icon/icon.jpg" alt="icone de titulo"></i>
+              <i class="fas fa-circle"><img src="/icon/icon.png" alt="icone de titulo"></i>
               <label for="titulo" class="inputBx"></label>
+            </div>
+
+            <div class="inputBx">
+              <input id="data" type="date" name="Data" required="required">
+              <i class="fas fa-circle"><img src="/icon/icon.png" alt="icone de calendário"></i>
+              <label for="data" class="inputBx"></label>
             </div>
 
             <div class="inputBx email">
               <input id="email" type="email" name="Email" required="required">
               <span>E-mail</span>
-              <i class="fas fa-email"><img src="/icon/email.jpg" alt="icone email"></i>
+              <i class="fas fa-email"><img src="/icon/email.png" alt="icone email"></i>
               <label for="email" class="inputBx"></label>
             </div>
 
             <div class="inputBx urlImagem">
               <input id="urlImagem" type="url" name="Link" required="required">
               <span>Link da imagem</span>
-              <i class="fas fa-image"><img src="/icon/link.jpg" alt="icone para url da imagem"></i>
+              <i class="fas fa-image"><img src="/icon/link.png" alt="icone para url da imagem"></i>
               <label for="urlImagem" class="inputBx"></label>
             </div>
 
             <div class="inputBx descricao">
               <input id="descricao" type="text" name="Descricao" required="required">
               <span>Descrição</span>
-              <i class="fas fa-list"><img src="/icon/descricao.jpg" alt="icone para descrição"></i>
+              <i class="fas fa-list"><img src="/icon/descricao.png" alt="icone para descrição"></i>
               <label for="descricao" class="inputBx"></label>
             </div>
 
@@ -64,14 +71,13 @@
 
         </div>
     
-
     </section>
 
     <main>
             
       <div class="container2">
 
-      </main>  
+    </main>  
 
     <script src="./script.js"></script>  
 
@@ -87,7 +93,7 @@
           <section class="redes">
               <a href="https://github.com/Kevilyn" target="_blank"><img src="imagens/githubvector_branco.png" alt=""></a>
               <a href="https://www.linkedin.com/in/kevilynqueirozdomingos/" target="_blank"><img src="imagens/linkedinvector_branco.png" alt=""></a>
-            </section>
+          </section>
         </section>
               
 
