@@ -13,9 +13,10 @@ body {
   background: linear-gradient(-15deg, #6d18ff, #ff0000, #1c003e);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
+  margin: 0 auto;
 }
 
-/* #icon forms */
+/* quadrado forms */
 
 .formulario {
   display: flex;
@@ -234,11 +235,7 @@ body {
 }
 
 .submit:hover {
-  background: linear-gradient(
-    115deg,
-    rgba(0, 0, 0, 0.1),
-    rgba(255, 255, 255, 0.25)
-  );
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.25));
   color: rgb(0, 0, 0);
   transition: 0.5s;
 }
