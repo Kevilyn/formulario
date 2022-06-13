@@ -68,16 +68,16 @@ body {
 }
 
 .box .square:nth-child(1) {
-  width: 100px;
-  height: 100px;
-  top: -15px;
-  right: -510px;
+  width: 85px;
+  height: 85px;
+  top: -235px;
+  right: -405px;
 }
 
 .box .square:nth-child(2) {
   width: 150px;
   height: 150px;
-  top: -160px;
+  top: -120px;
   left: -125px;
   z-index: 2;
 }
@@ -86,8 +86,8 @@ body {
   width: 60px;
   height: 60px;
   bottom: 85px;
-  right: 55px;
-  top: 150px;
+  right: -410px;
+  top: 110px;
   z-index: 2;
 }
 
@@ -96,6 +96,7 @@ body {
   height: 50px;
   bottom: 35px;
   left: -95px;
+  top: 170px;
 }
 
 .box .square:nth-child(5) {
@@ -103,13 +104,14 @@ body {
   height: 50px;
   top: -15px;
   left: -25px;
+  top: -230px;
 }
 
 .box .square:nth-child(6) {
-  width: 85px;
-  height: 85px;
-  top: -235px;
-  right: -405px;
+  width: 100px;
+  height: 100px;
+  top: -100px;
+  right: -520px;
 }
 
 .container {
@@ -325,6 +327,7 @@ footer{
   transition: 0.4s;
 }
 
-/* @media{
-
-} */
+@media screen and (min-width:
+1024px) {
+ #main { min-width: 1000px; }
+}
