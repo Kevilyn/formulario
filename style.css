@@ -9,7 +9,6 @@
 }
 
 body {
-  overflow-x:hidden;
   background: linear-gradient(-15deg, #6d18ff, #ff0000, #1c003e);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
