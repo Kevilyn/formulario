@@ -31,3 +31,17 @@ function adicionarCard(dados) {
     contas.insertBefore(card, primeiroPost);
   });
 }
+
+function setStyles() {
+  var currentColor = localStorage.getItem('bgcolor');
+  var currentFont = localStorage.getItem('font');
+  var currentImage = localStorage.getItem('image');
+
+  document.getElementById('bgcolor').value = currentColor;
+  document.getElementById('font').value = currentFont;
+  document.getElementById('image').value = currentImage;
+
+  htmlElem.style.backgroundColor = '#' + currentColor;
+  pElem.style.fontFamily = currentFont;
+  imgElem.setAttribute('src', currentImage);
+}

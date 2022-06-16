@@ -10,7 +10,7 @@
 
 body {
   background: linear-gradient(-15deg, #6d18ff, #ff0000, #1c003e);
-  background-size: 400% 400%;
+  background-size: 500% 500%;
   animation: gradient 10s ease infinite;
   display: flex;
   justify-content: center;
@@ -39,7 +39,6 @@ body {
   align-items: center;
   font-family: "Montserrat", sans-serif;
   padding: 30px 0;
-
 }
 
 .box {
@@ -111,7 +110,6 @@ body {
 .container {
   position: relative;
   padding: 100px;
- 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,11 +138,6 @@ body {
   flex: 1 1 200px;
 }
 
-/* .form {
-  position: relative;
-  width: 90%;
-  font-family: "Montserrat", sans-serif;
-} */
 
 .form h2 {
   color: #fff;
@@ -162,7 +155,7 @@ body {
 }
 
 .form .inputBx input {
-  width: 80%;
+  width: 70%;
   outline: none;
   border: none;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -200,6 +193,20 @@ body {
   font-weight: bold;
 }
 
+input::placeholder {
+  color: white;
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
 .submit {
   background: #fff;
   color: #111;
@@ -220,12 +227,12 @@ body {
 
 
 main {
-  width: 100%;
+  width: 70%;
   padding: 15px 20px;
   display: flex;
   font-family: "Montserrat", sans-serif;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
   flex-wrap: wrap;
   font-size: 10px;
 
@@ -311,5 +318,15 @@ footer {
 }
 
 
+@media screen and (max-width: 768px) {
+  .box .square {
+    display: none;
+  }
 
- 
+  .container{
+  padding: 50px;
+  
+}
+
+}
+
