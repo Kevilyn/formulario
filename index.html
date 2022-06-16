@@ -2,111 +2,114 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Mural de Fotos</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Mural de Fotos</title>
 </head>
 
 <body>
 
-  <section class="conteudo">
+	<section class="conteudo">
 
-    <div class="box">
+		<div class="box">
+			
+			<section class="quadradinho">
+				<div class="square" style="--i:0;"></div>
+				<div class="square" style="--i:1;"></div>
+				<div class="square" style="--i:2;"></div>
+				<div class="square" style="--i:3;"></div>
+				<div class="square" style="--i:4;"></div>
+				<div class="square" style="--i:5;"></div>
+			</section>
 
-        <section class="quadradinho">
-          <div class="square" style="--i:0;"></div>  
-          <div class="square" style="--i:1;"></div>
-          <div class="square" style="--i:2;"></div>
-          <div class="square" style="--i:3;"></div>
-          <div class="square" style="--i:4;"></div>
-          <div class="square" style="--i:5;"></div>
-      </section>
+
+			<div class="container">
+				<div class="form">
+
+					<h2>MURAL DE FOTOS</h2>
+
+					<form action="">
+
+						<div class="inputBx">
+							<input id="titulo" type="text" name="Titulo" required="required" placeholder="Título">
+							<i class="fas fa-circle"><img src="imagens/icon.png" alt=""></i>
+							<label for="titulo" class="inputBx"></label>
+						</div>
+
+						<div class="inputBx">
+							<input id="data" type="date" name="Data" required="required">
+							<i class="fas fa-circle"><img src="imagens/calendar.png" alt=""></i>
+							<label for="data" class="inputBx"></label>
+						</div>
+
+						<div class="inputBx email">
+							<input id="email" type="email" name="Email" required="required" placeholder="E-mail">
+							<i class="fas fa-email"><img src="imagens/email.png" alt=""></i>
+							<label for="email" class="inputBx"></label>
+						</div>
+
+						<div class="inputBx urlImagem">
+							<input id="urlImagem" type="url" name="Link" required="required"
+								placeholder="Link da imagem">
+							<i class="fas fa-circle"><img src="imagens/link.png" alt=""></i>
+							<label for="urlImagem" class="inputBx"></label>
+						</div>
+
+						<div class="inputBx descricao">
+							<input id="descricao" type="text" name="Descricao" required="required"
+								placeholder="Descrição">
+							<i class="fas fa-list"><img src="imagens/descricao.png"></i>
+							<label for="Sua Mensagem" class="inputBx"></label>
+						</div>
+
+						<button type="submit" class="submit" value="Submit">Enviar</button>
+
+					</form>
+
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<main>
+
+		<!-- <div class="container2"> -->
+
+	</main>
+
+	<script src="./script.js"></script>
 
 
-      <div class="container">
-        <div class="form">
-          <h2>MURAL DE FOTOS</h2>
+	</section>
 
-          <form action="">
-            <div class="inputBx">
-              <input id="titulo" type="text" name="Titulo" required="required">
-              <span>Título</span>
-              <i class="fas fa-circle"><img src="imagens/icon.png" alt=""></i>
-              <label for="titulo" class="inputBx"></label>
-            </div>
+	<footer>
+		<section class="dev">
+			<h4>Kevilyn Domingos</h4>
+			<section class="redes">
+				<a href="https://github.com/Kevilyn" target="_blank"><img src="imagens/githubvector_branco.png"
+						alt=""></a>
+				<a href="https://www.linkedin.com/in/kevilynqueirozdomingos/" target="_blank"><img
+						src="imagens/linkedinvector_branco.png" alt=""></a>
+			</section>
+		</section>
 
-            <div class="inputBx">
-              <input id="data" type="date" name="Data" required="required">
-              <i class="fas fa-circle"><img src="imagens/calendar.png" alt=""></i>
-              <label for="data" class="inputBx"></label>
-            </div>
 
-            <div class="inputBx email">
-              <input id="email" type="email" name="Email" required="required">
-              <span>E-mail</span>
-              <i class="fas fa-email"><img src="imagens/email.png" alt=""></i>
-              <label for="email" class="inputBx"></label>
-            </div>
+		<section class="dev">
+			<h4>Raphael Moura</h4>
+			<section class="redes">
+				<a href="https://github.com/raphaelmour" target="_blank"><img src="imagens/githubvector_branco.png"
+						alt=""></a>
+				<a href="https://linkedin.com/in/raphael-barros-5839aa124/" target="_blank"><img
+						src="imagens/linkedinvector_branco.png" alt=""></a>
+			</section>
+		</section>
+	</footer>
 
-            <div class="inputBx urlImagem">
-              <input id="urlImagem" type="url" name="Link" required="required">
-              <span>Link da imagem</span>
-              <i class="fas fa-circle"><img src="imagens/link.png" alt=""></i>
-              <label for="urlImagem" class="inputBx"></label>
-            </div>
-
-            <div class="inputBx descricao">
-              <input id="descricao" type="text" name="Descricao" required="required">
-              <span>Descrição</span>
-              <i class="fas fa-list"><img src="imagens/descricao.png"></i>
-              <label for="Sua Mensagem" class="inputBx"></label>
-            </div>
-
-        <button type="submit" class="submit" value="Submit">Enviar</button>
-                
-          </form>
-
-          </div>
-
-        </div>
-      </div>
-      
-    </section>
-
-    <main>
-            
-      <!-- <div class="container2"> -->
-
-    </main>  
-
-    <script src="./script.js"></script>  
-
-      
-  </section>
-
-  <footer>
-           <section class="dev">
-          <h4>Kevilyn Domingos</h4>
-          <section class="redes">
-              <a href="https://github.com/Kevilyn" target="_blank"><img src="imagens/githubvector_branco.png" alt=""></a>
-              <a href="https://www.linkedin.com/in/kevilynqueirozdomingos/" target="_blank"><img src="imagens/linkedinvector_branco.png" alt=""></a>
-          </section>
-        </section>
-              
-
-        <section class="dev">
-          <h4>Raphael Moura</h4>
-          <section class="redes">
-              <a href="https://github.com/raphaelmour" target="_blank"><img src="imagens/githubvector_branco.png" alt=""></a>
-              <a href="https://linkedin.com/in/raphael-barros-5839aa124/" target="_blank"><img src="imagens/linkedinvector_branco.png" alt=""></a>
-          </section>
-        </section>
-  </footer>
-
-</body>   
+</body>
 
 </html>
-

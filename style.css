@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-
+  box-sizing: border-box;
 }
 
 body {
@@ -16,15 +16,18 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -39,12 +42,12 @@ body {
   align-items: center;
   font-family: "Montserrat", sans-serif;
   padding: 30px 0;
-
+  overflow-x: hidden;
 }
 
 .box {
   position: relative;
-  
+
 }
 
 .box .square {
@@ -60,9 +63,12 @@ body {
 
 
 @keyframes square {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(-20px);
   }
+
   50% {
     transform: translateY(20px);
   }
@@ -74,6 +80,7 @@ body {
   top: -15px;
   right: -45px;
 }
+
 .box .square:nth-child(2) {
   width: 150px;
   height: 150px;
@@ -81,6 +88,7 @@ body {
   left: -125px;
   z-index: 2;
 }
+
 .box .square:nth-child(3) {
   width: 60px;
   height: 60px;
@@ -88,18 +96,21 @@ body {
   right: -45px;
   z-index: 2;
 }
+
 .box .square:nth-child(4) {
   width: 50px;
   height: 50px;
   bottom: 35px;
   left: -95px;
 }
+
 .box .square:nth-child(5) {
   width: 50px;
   height: 50px;
   top: -15px;
   left: -25px;
 }
+
 .box .square:nth-child(6) {
   width: 85px;
   height: 85px;
@@ -111,7 +122,7 @@ body {
 .container {
   position: relative;
   padding: 100px;
- 
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,13 +141,11 @@ body {
   left: 5px;
   border-radius: 5px;
   pointer-events: none;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.1) 2%
-  );
-  max-width:100%;
-  max-height:100%;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 2%);
+  max-width: 100%;
+  max-height: 100%;
   flex: 1 1 200px;
 }
 
@@ -192,12 +201,26 @@ body {
   pointer-events: none;
 }
 
-.form .inputBx input:focus ~ span,
-.form .inputBx input:valid ~ span {
+.form .inputBx input:focus~span,
+.form .inputBx input:valid~span {
   transform: translateX(-30px) translateY(-25px);
   font-size: 12px;
   color: #000;
   font-weight: bold;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
 }
 
 .submit {
@@ -244,7 +267,7 @@ main {
   gap: 20px;
   background-color: #ffffff;
   overflow-wrap: break-word;
- 
+
 }
 
 .card h2 {
@@ -258,7 +281,7 @@ main {
 }
 
 .card p {
-  text-align:justify;
+  text-align: justify;
 }
 
 
@@ -309,7 +332,3 @@ footer {
   transform: scale(1.35);
   transition: 0.4s;
 }
-
-
-
- 
